@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html>
+		<head>
+			<title> PoliFinder</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta charset = "utf-8">
+			<meta name = "description" content = "Proyecto">
+			<meta name = "keywords" content = "Buscar, Aulas">
+			
+		    <!--CSS-->
+			<link rel="stylesheet" href="css/estilo_timeline.css" type="text/css">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<!--leaflet-->
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+			integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+			crossorigin=""/>
+			<link rel="stylesheet" href="jquery-ui.min.css">
+			<!--JS-->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+			integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+			crossorigin=""></script>
+			<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+			<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
+			<script src="jquery-ui.min.js"></script>
+			<style>
+				   .ui-autocomplete {
+						max-height: 200px;
+						overflow-y: auto;
+						/* prevent horizontal scrollbar */
+						overflow-x: hidden;
+						/* add padding to account for vertical scrollbar */
+						padding-right: 20px;
+					} 
+					
+			</style>
+		</head>
+		<body>
+			<div class="container">
+				<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: #1A2421;">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								                        
+							</button>
+							<a class="navbar-brand" href="index.html">PoliFinder</a>
+						</div>
+						<div class="collapse navbar-collapse" id="myNavbar">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="index.html">Inicio</a></li>
+								<li class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown">Acerca
+									<span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="acerca.html">Vision y mision</a></li>
+										<li><a href="Desarrolladores.html">Desarrolladores</a></li>
+										<li><a href="timeline.html">Linea de Tiempo</a></li>
+									</ul>
+								</li>
+								<li><a href="galeria.html">Galeria</a></li>
+								<li><a href="faqs.html">FAQ's</a></li>
+								<li><a href="contacto.html">Contactenos</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+				<div class="container-fluid" id="contenido" >
+					<div class="row">
+						
+						<div class="col-lg-12">
+							
+							<div class="jumbotron2">
+								<div class="card">
+									<div class="products">
+										<div class="product active" product-id="1" product-color="#0B5345  ">
+											<div class="thumbnail"><img src="galeria/año2.png"/></div>
+											<h1 class="title">1958</h1>
+											<p class="description">El nacimiento de la Escuela Superior Politécnica del Litoral coincide con hechos significativos en la economía y la ciencia a nivel nacional y mundial. La Casona de la Universidad de Guayaquil fue el lugar donde la ESPOL empezó a impartir sus clases.</p>
+										</div>
+										<div class="product" product-id="2" product-color="#0E6655">
+											<div class="thumbnail"><img src="galeria/1960.png"/></div>
+											<h1 class="title">1960</h1>
+											<p class="description">Se inician las actividades académicas. En la gráfica, autoridades y estudiantes junto a Walter Camacho Navarro, rector de la ESPOL, durante la iniciación del primer semestre de estudios.  </p>
+										</div>
+										<div class="product" product-id="3" product-color="#117A65">
+											<div class="thumbnail"><img src="galeria/1970.png"/></div>
+											<h1 class="title">1970</h1>
+											<p class="description">Con la presencia del Presidente de la República, José María Velasco Ibarra, la ESPOL inauguró el primer Centro de Cómputo. El primer mandatario fue recibido por el Rector Walter Valdano Raffo.</p>
+										</div>
+										<div class="product" product-id="4" product-color="#138D75">
+											<div class="thumbnail"><img src="galeria/1972.png"/></div>
+											<h1 class="title">1972</h1>
+											<p class="description">El mejoramiento de la infraestructura física y tecnológica se financió con el proyecto BID/ESPOL I que ascendió a cerca de 4 millones de dólares. Se inició la reconstrucción de los edificios de la antigua Aduana, lugar donde se ubicaron las instalaciones y talleres de la ESPOL, en el Campus Las Peñas.</p>
+										</div>
+										<div class="product" product-id="5" product-color="#16A085">
+											<div class="thumbnail"><img src="galeria/1983.png"/></div>
+											<h1 class="title">1983</h1>
+											<p class="description">El esfuerzo institucional se centró en ejecutar el Plan de Desarrollo BID ESPOL II, el mismo que permitió ampliar las carreras de Ingeniería Eléctrica, crear cursos de posgrado, mejorar la calidad de la docencia, promover y apoyar las actividades de investigación, desarrollar programas de apoyo dirigidos al sector productivo. En la fotografía, el rector Walter Valdano durante la presentación de la maqueta del Campus Prosperina.</p>
+										</div>
+										<div class="product" product-id="6" product-color="#45B39D">
+											<div class="thumbnail"><img src="galeria/1990.png"/></div>
+											<h1 class="title">1990</h1>
+											<p class="description">Se inauguró formalmente el Centro Nacional de Acuicultura e Investigaciones Marinas, CENAIM-ESPOL, pilar fundamental para la sustentabilidad de la actividad camaronera al constituirse en el único centro de investigación en Biotecnología del camarón de cultivo y otras especies acuícolas del Ecuador. Las investigaciones aplicadas del CENAIM resolvieron el problema de “la mancha blanca” en el país.   </p>
+										</div>
+										<div class="product" product-id="7" product-color="#73C6B6">
+											<div class="thumbnail"><img src="galeria/1991.png"/></div>
+											<h1 class="title">1991</h1>
+											<p class="description">Se inauguró el Campus Politécnico Gustavo Galindo Velasco, en la Prosperina, un ambiente de estudio acogedor y en contacto con la naturaleza. Este campus es el resultado de un Plan de desarrollo, apoyado por todos los gobiernos desde 1979 y que fue financiado mediante un préstamo del BID. En la fotografía, una toma del Edificio del Rectorado. </p>
+										</div>
+										<div class="product" product-id="8" product-color="#A2D9CE">
+											<div class="thumbnail"><img src="galeria/2000.png"/></div>
+											<h1 class="title">2000</h1>
+											<p class="description">El Programa VLIR-ESPOL contribuyó de manera significativa al fortalecimiento de la investigación en la ESPOL y a la formación de 16 profesionales con el grado de Ph.D., quienes desarrollaron programas doctorales en las universidades flamencas de Bélgica. El proyecto se extendió en una segunda fase hasta el año 2008.</p>
+										</div>
+										<div class="product" product-id="9" product-color="#A9CCE3  ">
+											<div class="thumbnail"><img src="galeria/2007.png"/></div>
+											<h1 class="title">2007</h1>
+											<p class="description">ESPOL obtiene la Acreditación Institucional a la Calidad por parte del CONEA, un logro considerable que incluyó el proceso de autoevaluación y evaluación externa donde se analizaron las funciones de docencia, investigación, vinculación con la colectividad y gestión administrativa.</p>
+										</div>
+										<div class="product" product-id="10" product-color="#7FB3D5">
+											<div class="thumbnail"><img src="galeria/2009.png"/></div>
+											<h1 class="title">2009</h1>
+											<p class="description">La Escuela Superior Politécnica del Litoral es reconocida por el CONEA como una universidad Categoría A, según el Informe de Evaluación de Desempeño de las Instituciones de Educación Superior presentado a la Asamblea Nacional.</p>
+										</div>
+										<div class="product" product-id="11" product-color="#5499C7 ">
+											<div class="thumbnail"><img src="galeria/2014.png"/></div>
+											<h1 class="title">2014</h1>
+											<p class="description">El CEAACES nos ratifica en  categoría A luego del proceso nacional de evaluación universitaria.- Somos la única IES pública en Latinoamérica con acreditación internacional, pues las carreras de Ingeniería en Ciencias Computacionales e Ingeniería Mecánica fueron acreditadas por ABET. - Nuestra Escuela de Negocios ESPAE obtuvo la acreditación internacional AACSB.</p>
+										</div>
+										<div class="product" product-id="12" product-color="#2980B9">
+											<div class="thumbnail"><img src="galeria/2015.png"/></div>
+											<h1 class="title">2015</h1>
+											<p class="description">Se crean los primeros doctorados en la historia institucional: Doctorado en Ciencias Computacionales Aplicadas y Doctorado en Biociencias Aplicadas.-La Facultad de Ciencias de la Vida inicia sus funciones con tres carreras vigentes en la institución: Biología, Ingeniería Agrícola y Biológica y Licenciatura en Nutrición. La ESPOL se mantiene a la vanguardia de la investigación y oferta 9 maestrías de investigación acreditadas por el CES.</p>
+										</div>
+									</div>
+									<div class="footer2"><a class="btn" id="prev" href="#" ripple="" ripple-color="#666666">Prev</a><a class="btn" id="next" href="#" ripple="" ripple-color="#666666">Next</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<footer>
+				<div class="footer" id="footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+								<h3>Menu</h3>
+								<ul>
+									<li> <a href="index.html"> Inicio </a> </li>
+									<li> <a href="acerca.html"> Acerca de </a> </li>
+									<li> <a href="galeria.html"> Galeria </a> </li>
+									<li> <a href="faqs.html"> FAQ </a> </li>
+									<li> <a href="contacto.html"> Contactenos </a> </li>
+								</ul>
+							</div>
+							<div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+								
+							</div>
+							<div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+								
+							</div>
+							<div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+								
+							</div>
+							<div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
+								<h3> Contactenos </h3>
+								<ul>
+									<li>
+										<div class="input-append newsletter-box text-center">
+											<input type="text" class="full text-center" placeholder="Email ">
+											<button class="btn  bg-gray" type="button"> lgcruz@espol.edu.ec <i class="fa fa-long-arrow-right"> </i> </button>
+										</div>
+									</li>
+								</ul>
+								<ul class="social">
+									<li> <a href="https://www.facebook.com/"> <i class=" fa fa-facebook">   </i> </a> </li>
+									<li> <a href="https://twitter.com/"> <i class="fa fa-twitter">   </i> </a> </li>
+									<li> <a href="https://plus.google.com/"> <i class="fa fa-google-plus">   </i> </a> </li>
+									<li> <a href="https://www.pinterest.es/"> <i class="fa fa-pinterest">   </i> </a> </li>
+									<li> <a href="https://www.youtube.com/channel/UCBTW2oT9cV-3rJ3jOTgmTcg"> <i class="fa fa-youtube">   </i> </a> </li>
+								</ul>
+							</div>
+						</div>
+						<!--/.row--> 
+					</div>
+					<!--/.container--> 
+				</div>
+				<!--/.footer-->
+    
+				<div class="footer-bottom">
+					<div class="container">
+						<p class="pull-left"> Copyright © 2017. All right reserved. </p>
+						<div class="pull-right">
+							<ul class="nav nav-pills payments">
+                				<li><i class="fa fa-cc-visa"></i></li>
+								<li><i class="fa fa-cc-mastercard"></i></li>
+								<li><i class="fa fa-cc-amex"></i></fli>
+								<li><i class="fa fa-cc-paypal"></i></li>
+							</ul> 
+						</div>
+					</div>
+				</div>
+				<!--/.footer-bottom--> 
+			</footer>
+			
+			<script src="js/timeline.js"></script>
+		</body>
+</html>

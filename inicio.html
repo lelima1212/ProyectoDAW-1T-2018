@@ -1,17 +1,43 @@
 <!DOCTYPE html>
-	<html>
-		<head>
+<html>
+	<head>
 			<title> PoliProjects</title>
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<meta charset = "utf-8">
-			<meta name = "description" content = “Proyecto DAW””>
+			<meta name = "description" content = “Proyecto”>
 			<meta name = "keywords" content = "Buscar, Aulas">
-			<link rel="stylesheet" href="css/AcercaDeEstilo.css" type="text/css">
+
+		    <!--CSS-->
+			<link rel="stylesheet" href="css/estilo_index.css" type="text/css">
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<!--leaflet-->
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+			integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+			crossorigin=""/>
+			<link rel="stylesheet" href="jquery-ui.min.css">
+			<!--JS-->
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		</head>
-		<body>
+			<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+			integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+			crossorigin=""></script>
+			<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+			<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
+			<script src="jquery-ui.min.js"></script>
+			<style>
+				   .ui-autocomplete {
+						max-height: 200px;
+						overflow-y: auto;
+						/* prevent horizontal scrollbar */
+						overflow-x: hidden;
+						/* add padding to account for vertical scrollbar */
+						padding-right: 20px;
+					}
+
+			</style>
+	</head>
+	<body>
 			<div class="container">
 				<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: #1A2421;">
 					<div class="container-fluid">
@@ -44,19 +70,33 @@
 				</nav>
 				<div class="container-fluid" id="contenido" >
 					<div class="row">
-						<div class="col-lg-1"></div>
-						<div class="col-lg-10">
+
+						<div class="col-lg-12">
 
 							<div class="jumbotron">
-									<p>1.- ¿Que es la ESPOL?</p>
-									<br>
-									<p>La escuela superior politécnica del Litoral, es un instituto estatal que forma a los futuros ingenieros del pais con la intencion de que se desarrollen integros profesionales para el futuro.</p>
-									<br>
-									<p>Tiene 2 campus, el campus PEÑAS y el campus PROSPERINA los cuales son usados para las diferentes actividades tanto de pregrado como de postgrado.</p>
-							</div>
+								<div class="row">
+									<div class="col-lg-3">
+										<div class="container">
+											<div class="ui-widget">
+												<label for="tags1">Destino: </label>
+												<input id="tags1" spellcheck="false">
+											</div>
+											<div><p></p></div>
+											<!--<div class="ui-widget">
+												<label for="tags2">Partida: </label>
+												<input id="tags2" spellcheck="false">
+											</div>-->
 
+
+										</div>
+									</div>
+									<div class="col-lg-9">
+										<div id="mapid"></div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="col-lg-1"></div>
+
 					</div>
 				</div>
 			</div>
@@ -124,5 +164,5 @@
 				<!--/.footer-bottom-->
 			</footer>
 			<script src="js/leafletjs.js"></script>
-		</body>
-	</html>
+	</body>
+</html>

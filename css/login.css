@@ -1,0 +1,71 @@
+body{
+  background: url("../img/bglogin.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.main-section{
+  margin: 0 auto;
+  margin-top: 150px;
+  padding: 0;
+}
+
+.modal-content{
+  background-color: f1f7f5;
+  opacity: 0.95;
+  padding: 0 18px;
+  box-shadow: 0px 0px 3px #848484;
+}
+
+.user-img{
+  margin-top: -50px;
+  margin-bottom: 35px;
+}
+
+.user-img img{
+  height: 100px;
+  width: 100px;
+  border-radius: 5px;
+}
+
+.form-group{
+  margin-bottom: 25px;
+}
+
+.form-group input{
+  height: 42px;
+  border-radius: 5px;
+  background-color: #bbd4cc;
+}
+
+.form-control:focus {
+        border-color: #bbd4cc;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.050) inset, 2px 4px 7px rgba(160, 212, 195, 0.6);
+    }
+
+
+button{
+  width: 40%;
+  margin: 5px 0 25px;
+}
+
+.btn {
+  background-color: #313131;
+  font-size: 19px;
+  color: #fff;
+  padding: 7px 14px;
+  border-radius: 5px;
+  border-bottom: 4px solid #232222;
+}
+
+.btn:hover, .btn:focus{
+  background-color: #4c4a4a;
+  border-bottom: 4px solid #232222;
+}
+
+.forgot{
+  padding: 5px 0 25px;
+}
+
+.forgot a{
+  color: #a0d4c3;
+}

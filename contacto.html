@@ -10,6 +10,7 @@
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			<script src="js/validator.js"></script>
 		</head>
 		<body>
 			<div class="container">
@@ -54,26 +55,27 @@
 										   <table border="0" cellpadding="0" cellspacing="0" width="40%">
 		     									<tr>
 		       										<td width="70%">Nombre: </td>
-		       										<td width="50%"><input type="text" size="53" name="T1" placeholder="Nombre"></td>
+		       										<td width="50%"><input type="text" id="nombre" size="53" name="T1" placeholder="Nombre"></td>
 		       									</tr>
 
 		       									<tr>
-		       										<td width="70%">Email: </td>
-		       										<td width="50%"><input type="text" size="53" name="T2" placeholder="email"></td>
+		       										<td width="70%">Email:</td>
+		       										<td width="50%"><input type="text" id="email" size="53" name="T2" placeholder="email"><span id="emailOK"></span></td>
+		       										
 		       									</tr>
 
 		       									<tr>
 													<td width="70%">Asunto: </td>
-		       										<td width="50%"><input type="text" size="53" name="T3" placeholder="Asunto"></td>
+		       										<td width="50%"><input type="text" id="asunto" size="53" name="T3" placeholder="Asunto"></td>
 		     									</tr>
 
 		     									<tr>
 		     										<td width="70%">Mensaje: </td>
-		     										<td width="50%"><textarea class="form-control" rows="5"></textarea></td>
+		     										<td width="50%"><textarea class="form-control" id="mensaje" rows="5"></textarea></td>
 		     									</tr>
 
 		     									<tr>
-		     										<td width="50%"><button type="button" class="btn btn-success" >Enviar</button></td>
+		     										<td width="50%"><button type="button" id="enviarbtn" class="btn btn-success" >Enviar</button></td>
 		     									</tr>
 	   										</table>
 	   									</td>
